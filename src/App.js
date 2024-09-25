@@ -1,5 +1,4 @@
 import "./App.css";
-import NavigationBar from "./components/NavigationBar";
 import SideBarDetail from "./components/SideBarDetail";
 import { useState } from "react";
 import { Logindialog } from "./components/Logindialog";
@@ -17,8 +16,7 @@ function App() {
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <SideBarDetail />
-      <NavigationBar handleLogin={handleLogin} />
+      <SideBarDetail handleLogin={handleLogin} />
       {/* Render the login popup when isLoggedIn is true */}
       {isLoggedIn && (
         <div className="modal">
